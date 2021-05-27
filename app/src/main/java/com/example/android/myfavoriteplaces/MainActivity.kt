@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
         listView.setOnItemClickListener { parent, view, position, id ->
             val intent = Intent(applicationContext, MapsActivity::class.java)
             intent.putExtra("placeId", position)
-
+            startActivity(intent)
         }
     }
 
